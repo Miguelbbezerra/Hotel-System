@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Locar Quarto</title>
+  <style>
+    
+    body{
+        background-color: rgb(215, 243, 249);
+        background-image: url(https://triplover.com.br/wp-content/uploads/2020/03/Melhor-Hotel-Luxo.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+
+    .menu {
+      background-color: #ffffff;
+      display: flex;
+      justify-content: center;
+      border-bottom-left-radius: 20px;
+      border-bottom-right-radius: 20px;
+      box-shadow: 0px 3px 10px rgb(122, 150, 175);
+    }
+
+    .menu ul {
+      list-style-type: none;
+      padding: 0;
+      margin: 0;
+      display: flex;
+      font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    }
+
+    .menu li {
+      padding: 10px 20px;
+      font-size: 23px;
+    }
+
+    .menu li:hover {
+      background-color: #d7dede;
+    }
+
+    .menu li a {
+      text-decoration: none;
+      color: #3a747a;
+    }
+
+    form{
+        background-color: #ffffff;
+        border-radius: 8px;
+        color: #1f3b3e;
+        box-shadow: 0px 3px 10px rgb(122, 150, 175); 
+        padding: 10px; 
+        margin-left: 300px;
+        margin-right: 300px;
+        line-height: 50px;
+    }
+    
+    label{
+        font-size: 20px;
+        padding: 10px;
+        margin-left: 100px;
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    }
+
+    input[type="text"],
+    input[type="date"],
+    input[type="number"],
+    select{
+        background-color: rgb(206, 233, 236);
+        border: 0;
+        margin-left: 30px;
+        border-radius: 8px;
+        font-size: 14px;
+        padding: 10px;
+        width: 500px;
+    }
+
+    h1{
+      text-align: center;
+      color: #f0fdff;
+      padding-top: 10px;
+      font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    }
+
+
+  </style>
+</head>
+<body>
+
+  <div class="menu">
+    <ul>
+      <li><a href="#">Locar Quarto</a></li>
+      <li><a href="#">Opção 2</a></li>
+      <li><a href="#">Opção 3</a></li>
+      <li><a href="#">Opção 4</a></li>
+      <li><a href="#">Opção 5</a></li>
+    </ul>
+  </div>
+
+  <div class="conteudo">
+    <h1>Locação De Quarto</h1>
+    
+    <form class="formulario">
+
+      
+            <div class="hospede">
+              <p>
+              <label for="nome">Hóspede</label>
+              <input type="text" id="nome" name="nome">
+              </p>
+            </div>
+
+
+            <p>
+            <label for="quarto">Quarto</label>
+            <select name="quarto">
+            <option value="quarto">100</option>
+            <option value="quarto1">101</option>
+            <option value="quarto2">102</option>
+            <option value="quarto3">103</option>
+            <option value="quarto4">200</option>
+            <option value="quarto5">201</option>
+            <option value="quarto6">202</option>
+            <option value="quarto7">203</option>
+            </select>
+            </p>
+            <p>
+            <label for="entrada">Entrada</label>
+            <input type="date" id="entrada" name="entrada">
+            <p></p>
+            <label for="saida">Saída</label>
+            <input type="date" id="saida" name="saida">
+            </p>
+
+            <p>
+              <label for="numerohos">Numero de hóspedes:</label>
+            </p>
+              <label for="numeadul">Nº adultos</label>
+              <input type="number" id="numeadul" name="numeadul">
+            <p></p>
+              <label for="numecria">Nº crianças</label>
+              <input type="number" id="numecria" name="numecria">
+
+              <p></p>
+              <label for="valor">Valor da diária</label>
+              <input type="text" id="valor" name="valor" placeholder="00,00">
+
+            
+              <p>
+              <label for="placa">Placa do veículo</label>
+              <input type="text" id="placa" name="placa">
+
+              <p>
+              <label for="obs">Observação</label>
+              <input type="text" id="obs" name="obs">
+
+              <p>
+              <button style="background: #338783; border-radius: 6px; padding: 15px; margin-left: 270px; width: 400px; cursor: pointer; color: #fff; border: none; font-size: 20px;">Locar Quarto</button>
+              </p>
+
+    </form>
+  </div>
+</body>
+</html>
